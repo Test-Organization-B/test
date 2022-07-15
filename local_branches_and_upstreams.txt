@@ -1,0 +1,4 @@
+  development 2069493 [origin/development] Initial commit
+* feature2    2069493 Initial commit
+  feature_1   2069493 Initial commit
+  main        2069493 [origin/main] Initial commit

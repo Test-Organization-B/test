@@ -1,0 +1,15 @@
+git branch -r
+
+git branch --format "%(refname:short) %(upstream)"
+
+git branch --format "%(refname:short) %(upstream)" | awk '{if (!$2) print $1;}'
+
+git branch -vv
+
+git branch -vv | cut -c 3- | awk '$3 !~/\[/ { print $1 }'
+
+git fetch --prune
+
+git branch -v|grep \\[gone\\]|awk '{print $1}'|xargs -I{} git branch -D {}
+
+git checkout -b <branch> <hash>
